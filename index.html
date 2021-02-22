@@ -1,0 +1,3834 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+      body {
+        overflow: hidden;
+        transform: translateZ(0)
+      }
+      .mainArea {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: rgb(29,150,200);
+        background: radial-gradient(circle, rgba(29,150,200,1) 0%, rgba(255,255,255,1) 21%, rgba(0,212,255,1) 100%);
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .mainAreaGradient {
+        animation: stripleAni 10s ease infinite;
+      }
+
+      .circle {
+        width: 220px;
+        height: 220px;
+
+        border: 2px solid #f5fbfe;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 1;
+        animation-play-state: running;
+        position: absolute;
+        transform: translateZ(0);
+
+
+        background: rgb(127, 197, 235, 0.8);
+      }
+
+  .circleRing::after {
+  content: '';
+  width: 11rem; height: 11rem;
+  border-radius: 100%;
+  border: 0.5rem solid white;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 10s forwards;
+  animation-fill-mode:forwards
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+
+  30% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+   
+  }
+}
+
+.circleRingIn::after {
+  content: '';
+  width: 11rem; height: 11rem;
+  border-radius: 100%;
+  border: 0.5rem solid white;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ringIn 10s forwards;
+  animation-fill-mode:forwards;
+  transition-timing-function: ease-in;
+}
+
+@keyframes ringIn {
+  0% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+
+  20% {
+   
+    opacity: 0.5;
+  }
+
+  60% {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+  }
+  100% {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+   
+  }
+}
+
+.circleRingIn2::after {
+  content: '';
+  width: 11rem; height: 11rem;
+  border-radius: 100%;
+  border: 0.5rem solid white;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ringIn2 8s forwards;
+  animation-fill-mode:forwards;
+  transition-timing-function: ease-in;
+}
+
+@keyframes ringIn2 {
+  0% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+
+  20% {
+   
+    opacity: 0.5;
+  }
+
+  70% {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+  }
+  100% {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+   
+  }
+}
+
+.circleRingIn3::after {
+  content: '';
+  width: 11rem; height: 11rem;
+  border-radius: 100%;
+  border: 0.5rem solid white;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ringIn3 8s forwards;
+  animation-fill-mode:forwards;
+  transition-timing-function: ease-in;
+  
+
+}
+
+@keyframes ringIn3 {
+  0% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+
+  20% {
+   
+    opacity: 0.5;
+  }
+
+  80% {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+  }
+  100% {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+   
+  }
+}
+
+.circleRing2::after {
+  content: '';
+  width: 11rem; height: 11rem;
+  border-radius: 100%;
+  border: 0.5rem solid white;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring2 10s forwards;
+  animation-fill-mode:forwards
+ 
+
+
+}
+
+@keyframes ring2 {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+
+  40% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+   
+  }
+}
+
+.circleRing3::after {
+  content: '';
+  width: 11rem; height: 11rem;
+  border-radius: 100%;
+  border: 0.5rem solid white;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring3 10s forwards;
+  animation-fill-mode:forwards
+
+}
+
+@keyframes ring3 {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+
+  50% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+   
+  }
+}
+
+       .circle:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+       background: rgba(34, 167, 240, 0.8);
+        border-radius: 100%;
+
+        transform: scale(0);
+        transition-property: transform;
+        transition-duration: 0.3s;
+
+        transition-timing-function: ease-out;
+      } 
+
+      .paused {
+        animation-play-state: paused;
+      }
+       .circle.grow {
+        animation: grow 4s ease-out forwards;
+      }
+      .circle.shrink {
+        animation: shrink 4s ease-in forwards;
+      } 
+      .expanding {
+        width: 220px;
+        height: 220px;
+        background-color: rgba(34, 167, 240, 0.8);
+       
+        border: 2px solid #f5fbfe;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+        box-shadow: 0 0 100px 80px rgba(34, 167, 240, 0.8);
+        z-index: -10;
+        animation-play-state: running;
+        position: absolute;
+        transform: translateZ(0)
+      }
+      .expanding.grow {
+        animation: expandingGrow 4s ease-out forwards;
+      }
+      .expanding.shrink {
+        animation: expandingShrink 4s ease-in forwards;
+      }
+
+      @keyframes shrink {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 100px 80px rgba(34, 167, 240, 0.8);
+          background: rgba(34, 167, 240, 0.8);
+        }
+        75% {
+          transform: scale(0.9);
+          box-shadow: none;
+        }
+        100% {
+          transform: scale(0.9);
+          box-shadow: none;
+          background: rgba(34, 167, 240, 0.1); 
+        }
+      }
+      @keyframes grow {
+        0% {
+          transform: scale(0.9);
+          box-shadow: none;
+          background: rgba(34, 167, 240, 0.1);
+        }
+        10% {
+          transform: scale(0.9);
+   
+        }
+        52% {
+      
+        }
+        100% {
+          transform: scale(1); 
+          box-shadow: 0 0 100px 80px rgba(34, 167, 240, 0.8);
+          background: rgba(34, 167, 240, 0.8);
+     
+        }
+      }
+      @keyframes expandingShrink {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 100px 80px rgba(34, 167, 240, 0.8);
+
+          background: rgba(34, 167, 240, 0.8);
+     
+        }
+        75% {
+          transform: scale(0.8);
+          box-shadow: none;
+        
+        }
+        100% {
+          transform: scale(0.8);
+          box-shadow: none;
+          background: rgba(34, 167, 240, 0.1);
+        }
+      }
+      @keyframes expandingGrow {
+        0% {
+          transform: scale(0.8);
+          box-shadow: none;
+          background: rgba(34, 167, 240, 0.1);
+        }
+        10% {
+          transform: scale(0.8);
+         
+        }
+        52% {
+          
+        } 
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 100px 80px rgba(34, 167, 240, 0.8);
+          background: rgba(34, 167, 240, 0.8);
+        }
+      }
+      .bubble,
+      .bubble2,
+      .bubble3,
+      .bubble4,
+      .bubble5,
+      .bubble6,
+      .bubble7,
+      .bubble8,
+      .bubble9,
+      .bubble10,
+      .bubble11,
+      .bubble12,
+      .bubble13,
+      .bubble14,
+      .bubble15,
+      .bubble16,
+      .bubble17,
+      .bubble18,
+      .bubble19,
+      .bubble20,
+      .bubble21,
+      .bubble22,
+      .bubble23,
+      .bubble24,
+      .bubble25,
+      .bubble26,
+      .bubble27,
+      .bubble28,
+      .bubble29,
+      .bubble30,
+      .bubble31,
+      .bubble32,
+      .bubble33,
+      .bubble34,
+      .bubble35,
+      .bubble36,
+      .bubble37,
+      .bubble38,
+      .bubble39,
+      .bubble40,
+      .bubble41,
+      .bubble42,
+      .bubble43,
+      .bubble44,
+      .bubble45,
+      .bubble46,
+      .bubble47,
+      .bubble48,
+      .bubble49,
+      .bubble50,
+      .bubble51,
+      .bubble52,
+      .bubble53,
+      .bubble54,
+      .bubble55,
+      .bubble56 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+        opacity: 0.5;
+        background: rgb(0,212,255);
+        background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,207,251,1) 0%, rgba(0,212,255,1) 0%, rgba(29,150,200,1) 75%, rgba(40,146,236,1) 100%);
+      }
+      .bubble52 {
+        border: 4px solid white;
+      
+      }
+      .moveUp,
+      .moveUpRight,
+      .moveUpRight2,
+      .moveUpRight3,
+      .moveUpRight3,
+      .moveUpRight4,
+      .moveUpRight4,
+      .moveUpRight5,
+      .moveUpRight5,
+      .moveUpRight6,
+      .moveUpRight6,
+      .moveUpRight7,
+      .moveUpRight8,
+      .moveUpRight9,
+      .moveUpRight10,
+      .moveUpRight11,
+      .moveUpRight12,
+      .moveUpRight13,
+      .moveUpRight14,
+      .moveUpRight15,
+      .moveUpRight16,
+      .moveUpRight17,
+      .moveUpRight18,
+      .moveUpRight19,
+      .moveUpRight20,
+      .moveUpRight21,
+      .moveUpRight22,
+      .moveUpRight23,
+      .moveUpRight24,
+      .moveUpRight25,
+      .moveUpRight26,
+      .moveUpRight27,
+      .moveUpRight28,
+      .moveUpRight29,
+      .moveUpRight30,
+      .moveUpRight31,
+      .moveUpRight32,
+      .moveUpRight33,
+      .moveUpRight34,
+      .moveUpRight35,
+      .moveUpRight36,
+      .moveUpRight37,
+      .moveUpRight38,
+      .moveUpRight39,
+      .moveUpRight40,
+      .moveUpRight41,
+      .moveUpRight42,
+      .moveUpRight43,
+      .moveUpRight44,
+      .moveUpRight45,
+      .moveUpRight46,
+      .moveUpRight47,
+      .moveUpRight48,
+      .moveUpRight49,
+      .moveUpRight50,
+      .moveUpRight51 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+        opacity: 0.5;
+      }
+      .moveUp {
+        animation: moveUp 3s ease-out forwards;
+      }
+      .moveDown {
+        animation: moveDown 2.5s ease-in forwards;
+      }
+      .moveUpRight {
+        animation: moveUpRight 3.8s ease-out forwards;
+      }
+      .moveDownLeft {
+        animation: moveDownLeft 3s ease-in forwards;
+      }
+      .moveUpRight2 {
+        animation: moveUpRight2 4.6s ease-out forwards;
+      }
+      .moveDownLeft2 {
+        animation: moveDownLeft2 3.5s ease-in forwards;
+      }
+      .moveUpRight3 {
+        animation: moveUpRight3 3s ease-out forwards;
+      }
+      .moveDownLeft3 {
+        animation: moveDownLeft3 3s ease-in forwards;
+      }
+      .moveUpRight4 {
+        animation: moveUpRight4 3.8s ease-out forwards;
+      }
+      .moveDownLeft4 {
+        animation: moveDownLeft4 3.8s ease-in forwards;
+      }
+      .moveUpRight5 {
+        animation: moveUpRight5 4.6s ease-out forwards;
+      }
+      .moveDownLeft5 {
+        animation: moveDownLeft5 4.6s ease-in forwards;
+      }
+      .moveUpRight6 {
+        animation: moveUpRight6 3s ease-out forwards;
+      }
+      .moveDownLeft6 {
+        animation: moveDownLeft6 3s ease-in forwards;
+      }
+      .moveUpRight7 {
+        animation: moveUpRight7 3.8s ease-out forwards;
+      }
+      .moveDownLeft7 {
+        animation: moveDownLeft7 3.8s ease-in forwards;
+      }
+      .moveUpRight8 {
+        animation: moveUpRight8 4.6s ease-out forwards;
+      }
+      .moveDownLeft8 {
+        animation: moveDownLeft8 4.6s ease-in forwards;
+      }
+      .moveUpRight9 {
+        animation: moveUpRight9 3s ease-out forwards;
+      }
+      .moveDownLeft9 {
+        animation: moveDownLeft9 3s ease-in forwards;
+      }
+      .moveUpRight10 {
+        animation: moveUpRight10 3.8s ease-out forwards;
+      }
+      .moveDownLeft10 {
+        animation: moveDownLeft10 3.8s ease-in forwards;
+      }
+      .moveUpRight11 {
+        animation: moveUpRight11 4.6s ease-out forwards;
+      }
+      .moveDownLeft11 {
+        animation: moveDownLeft11 4.6s ease-in forwards;
+      }
+      .moveUpRight12 {
+        animation: moveUpRight12 3s ease-out forwards;
+      }
+      .moveDownLeft12 {
+        animation: moveDownLeft12 3s ease-in forwards;
+      }
+      .moveUpRight13 {
+        animation: moveUpRight13 3.8s ease-out forwards;
+      }
+      .moveDownLeft13 {
+        animation: moveDownLeft13 3.8s ease-in forwards;
+      }
+      .moveUpRight14 {
+        animation: moveUpRight14 4.6s ease-out forwards;
+      }
+      .moveDownLeft14 {
+        animation: moveDownLeft14 4.6s ease-in forwards;
+      }
+      .moveUpRight15 {
+        animation: moveUpRight15 3s ease-out forwards;
+      }
+      .moveDownLeft15 {
+        animation: moveDownLeft15 3s ease-in forwards;
+      }
+      .moveUpRight16 {
+        animation: moveUpRight16 3.8s ease-out forwards;
+      }
+      .moveDownLeft16 {
+        animation: moveDownLeft16 3.8s ease-in forwards;
+      }
+      .moveUpRight17 {
+        animation: moveUpRight17 4.6s ease-out forwards;
+      }
+      .moveDownLeft17 {
+        animation: moveDownLeft17 4.6s ease-in forwards;
+      }
+      .moveUpRight18 {
+        animation: moveUpRight18 3s ease-out forwards;
+      }
+      .moveDownLeft18 {
+        animation: moveDownLeft18 3s ease-in forwards;
+      }
+      .moveUpRight19 {
+        animation: moveUpRight19 3.8s ease-out forwards;
+      }
+      .moveDownLeft19 {
+        animation: moveDownLeft19 3.8s ease-in forwards;
+      }
+      .moveUpRight20 {
+        animation: moveUpRight20 4.6s ease-out forwards;
+      }
+      .moveDownLeft20 {
+        animation: moveDownLeft20 4.6s ease-in forwards;
+      }
+      .moveUpRight21 {
+        animation: moveUpRight21 3s ease-out forwards;
+      }
+      .moveDownLeft21 {
+        animation: moveDownLeft21 3s ease-in forwards;
+      }
+      .moveUpRight22 {
+        animation: moveUpRight22 3.8s ease-out forwards;
+      }
+      .moveDownLeft22 {
+        animation: moveDownLeft22 3.8s ease-in forwards;
+      }
+      .moveUpRight23 {
+        animation: moveUpRight23 4.6s ease-out forwards;
+      }
+      .moveDownLeft23 {
+        animation: moveDownLeft23 4.6s ease-in forwards;
+      }
+      .moveUpRight24 {
+        animation: moveUpRight24 3s ease-out forwards;
+      }
+      .moveDownLeft24 {
+        animation: moveDownLeft24 3s ease-in forwards;
+      }
+      .moveUpRight25 {
+        animation: moveUpRight25 3.8s ease-out forwards;
+      }
+      .moveDownLeft25 {
+        animation: moveDownLeft25 3.8s ease-in forwards;
+      }
+      .moveUpRight26 {
+        animation: moveUpRight26 4.6s ease-out forwards;
+      }
+      .moveDownLeft26 {
+        animation: moveDownLeft26 4.6s ease-in forwards;
+      }
+      .moveUpRight27 {
+        animation: moveUpRight27 3s ease-out forwards;
+      }
+      .moveDownLeft27 {
+        animation: moveDownLeft27 3s ease-in forwards;
+      }
+      .moveUpRight28 {
+        animation: moveUpRight28 3.8s ease-out forwards;
+      }
+      .moveDownLeft28 {
+        animation: moveDownLeft28 3.8s ease-in forwards;
+      }
+      .moveUpRight29 {
+        animation: moveUpRight29 4.6s ease-out forwards;
+      }
+      .moveDownLeft29 {
+        animation: moveDownLeft29 4.6s ease-in forwards;
+      }
+      .moveUpRight30 {
+        animation: moveUpRight30 3s ease-out forwards;
+      }
+      .moveDownLeft30 {
+        animation: moveDownLeft30 3s ease-in forwards;
+      }
+      .moveUpRight31 {
+        animation: moveUpRight31 3.8s ease-out forwards;
+      }
+      .moveDownLeft31 {
+        animation: moveDownLeft31 3.8s ease-in forwards;
+      }
+      .moveUpRight32 {
+        animation: moveUpRight32 4.6s ease-out forwards;
+      }
+      .moveDownLeft32 {
+        animation: moveDownLeft32 4.6s ease-in forwards;
+      }
+      .moveUpRight33 {
+        animation: moveUpRight33 3s ease-out forwards;
+      }
+      .moveDownLeft33 {
+        animation: moveDownLeft33 3s ease-in forwards;
+      }
+      .moveUpRight34 {
+        animation: moveUpRight34 3.8s ease-out forwards;
+      }
+      .moveDownLeft34 {
+        animation: moveDownLeft34 3.8s ease-in forwards;
+      }
+      .moveUpRight35 {
+        animation: moveUpRight35 4.6s ease-out forwards;
+      }
+      .moveDownLeft35 {
+        animation: moveDownLeft35 3s ease-in forwards;
+      }
+      .moveUpRight36 {
+        animation: moveUpRight36 3s ease-out forwards;
+      }
+      .moveDownLeft36 {
+        animation: moveDownLeft36 3.8s ease-in forwards;
+      }
+      .moveUpRight37 {
+        animation: moveUpRight37 3.8s ease-out forwards;
+      }
+      .moveDownLeft37 {
+        animation: moveDownLeft37 4.6s ease-in forwards;
+      }
+      .moveUpRight38 {
+        animation: moveUpRight38 4.6s ease-out forwards;
+      }
+      .moveDownLeft38 {
+        animation: moveDownLeft38 3s ease-in forwards;
+      }
+      .moveUpRight39 {
+        animation: moveUpRight39 3s ease-out forwards;
+      }
+      .moveDownLeft39 {
+        animation: moveDownLeft39 3.8s ease-in forwards;
+      }
+      .moveUpRight40 {
+        animation: moveUpRight40 3.8s ease-out forwards;
+      }
+      .moveDownLeft40 {
+        animation: moveDownLeft40 3.1s ease-in forwards;
+      }
+      .moveUpRight41 {
+        animation: moveUpRight41 4.6s ease-out forwards;
+      }
+      .moveDownLeft41 {
+        animation: moveDownLeft41 2.5s ease-in forwards;
+      }
+      .moveUpRight42 {
+        animation: moveUpRight42 3.8s ease-out forwards;
+      }
+      .moveDownLeft42 {
+        animation: moveDownLeft42 3s ease-in forwards;
+      }
+      .moveUpRight43 {
+        animation: moveUpRight43 4.6s ease-out forwards;
+      }
+      .moveDownLeft43 {
+        animation: moveDownLeft43 3.5s ease-in forwards;
+      }
+      .moveUpRight44 {
+        animation: moveUpRight44 3s ease-out forwards;
+      }
+      .moveDownLeft44 {
+        animation: moveDownLeft44 2.5s ease-in forwards;;
+      }
+      .moveUpRight45 {
+        animation: moveUpRight45 3.8s ease-out forwards;
+      }
+      .moveDownLeft45 {
+        animation: moveDownLeft45 3s ease-in forwards;
+      }
+      @keyframes moveUp {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 4%;
+          left: 47%;
+          transform: scale(1.5);
+          opacity: 0.8;
+      
+        }
+      }
+      @keyframes moveDown {
+        0% {
+          top: 4%;
+          left: 47%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 4%;
+          left: 47%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+      }
+      @keyframes moveDownLeft {
+        0% {
+          top: 4%;
+          left: 47%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight2 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 4%;
+          left: 47%;
+          transform: scale(1.5);
+          opacity: 0.8;
+      
+        }
+      }
+      @keyframes moveDownLeft2 {
+        0% {
+          top: 4%;
+          left: 47%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+      }
+      @keyframes moveUpRight3 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 10%;
+          left: 65%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+      }
+      @keyframes moveDownLeft3 {
+        0% {
+          top: 10%;
+          left: 65%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight4 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 10%;
+          left: 65%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+      }
+      @keyframes moveDownLeft4 {
+        0% {
+          top: 10%;
+          left: 65%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight5 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 10%;
+          left: 65%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+      }
+      @keyframes moveDownLeft5 {
+        0% {
+          top: 10%;
+          left: 65%;
+          transform: scale(1.5);
+          opacity: 0.8;
+ 
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+    
+        }
+      }
+      @keyframes moveUpRight6 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+   
+        }
+        100% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+      }
+      @keyframes moveDownLeft6 {
+        0% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+    
+        }
+      }
+
+      @keyframes moveUpRight7 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+        100% {
+          top: 43%;
+          left: 80%;
+          transform: scale(1.5);
+          opacity: 0.8;
+      
+        }
+      }
+      @keyframes moveDownLeft7 {
+        0% {
+          top: 43%;
+          left: 80%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+      }
+      @keyframes moveUpRight8 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+        100% {
+          top: 43%;
+          left: 80%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+      }
+      @keyframes moveDownLeft8 {
+        0% {
+          top: 43%;
+          left: 80%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight9 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+     
+        }
+        100% {
+          top: 43%;
+          left: 80%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+      }
+      @keyframes moveDownLeft9 {
+        0% {
+          top: 43%;
+          left: 80%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+     
+      @keyframes moveUpRight11 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+     
+        }
+        100% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+          
+        }
+      }
+      @keyframes moveDownLeft11 {
+        0% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+         
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+       
+        }
+      }
+
+      @keyframes moveUpRight12 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+        100% {
+          top: 80%;
+          left: 67%;
+          transform: scale(1.5);
+          opacity: 0.8;
+ 
+        }
+      }
+      @keyframes moveDownLeft12 {
+        0% {
+          top: 80%;
+          left: 67%;
+          transform: scale(1.5);
+          opacity: 0.8;
+ 
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+    
+        }
+      }
+      @keyframes moveUpRight13 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 80%;
+          left: 67%;
+          transform: scale(1.5);
+          opacity: 0.8;
+       
+        }
+      }
+      @keyframes moveDownLeft13 {
+        0% {
+          top: 80%;
+          left: 67%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight14 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 80%;
+          left: 67%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+      }
+      @keyframes moveDownLeft14 {
+        0% {
+          top: 80%;
+          left: 67%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+      }
+      @keyframes moveUpRight15 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 73%;
+          left: 19%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+      }
+      @keyframes moveDownLeft15 {
+        0% {
+          top: 73%;
+          left: 19%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight16 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 73%;
+          left: 19%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+      }
+      @keyframes moveDownLeft16 {
+        0% {
+          top: 73%;
+          left: 19%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+      }
+      @keyframes moveUpRight17 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 73%;
+          left: 19%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+      }
+      @keyframes moveDownLeft17 {
+        0% {
+          top: 73%;
+          left: 19%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+    
+        }
+      }
+      @keyframes moveUpRight18 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+     
+        }
+        100% {
+          top: 8%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+      }
+      @keyframes moveDownLeft18 {
+        0% {
+          top: 8%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight19 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+   
+        }
+        100% {
+          top: 8%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+       
+        }
+      }
+      @keyframes moveDownLeft19 {
+        0% {
+          top: 8%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+      }
+      @keyframes moveUpRight20 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+    
+        }
+        100% {
+          top: 8%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+      }
+      @keyframes moveDownLeft20 {
+        0% {
+          top: 8%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+      }
+      @keyframes moveUpRight21 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+        100% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+      }
+      @keyframes moveDownLeft21 {
+        0% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+      }
+      @keyframes moveUpRight22 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+      
+        }
+      }
+      @keyframes moveDownLeft22 {
+        0% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight23 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+      }
+      @keyframes moveDownLeft23 {
+        0% {
+          top: 20%;
+          left: 20%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+      }
+      @keyframes moveUpRight24 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+        100% {
+          top: 60%;
+          left: 10%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+      }
+      @keyframes moveDownLeft24 {
+        0% {
+          top: 60%;
+          left: 10%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+    
+        }
+      }
+      @keyframes moveUpRight25 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+   
+        }
+        100% {
+          top: 60%;
+          left: 10%;
+          transform: scale(1.5);
+          opacity: 0.8;
+ 
+        }
+      }
+      @keyframes moveDownLeft25 {
+        0% {
+          top: 60%;
+          left: 10%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+      }
+      @keyframes moveUpRight26 {
+        0% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 60%;
+          left: 10%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+      }
+      @keyframes moveDownLeft26 {
+        0% {
+          top: 60%;
+          left: 10%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+        100% {
+          top: 45%;
+          left: 45%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+      }
+      @keyframes moveUpRight27 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+     
+        }
+        100% {
+          top: 80%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+        
+        }
+      }
+      @keyframes moveDownLeft27 {
+        0% {
+          top: 80%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+      }
+      @keyframes moveUpRight28 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+      
+        }
+        100% {
+          top: 80%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+      }
+      @keyframes moveDownLeft28 {
+        0% {
+          top: 80%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+      }
+      @keyframes moveUpRight29 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+     
+        }
+        100% {
+          top: 80%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+      
+        }
+      }
+      @keyframes moveDownLeft29 {
+        0% {
+          top: 80%;
+          left: 35%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight30 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+        100% {
+          top: 85%;
+          left: 50%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+      }
+      @keyframes moveDownLeft30 {
+        0% {
+          top: 85%;
+          left: 50%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+      }
+      @keyframes moveUpRight31 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 85%;
+          left: 50%;
+          transform: scale(1.5);
+          opacity: 0.8;
+      
+        }
+      }
+      @keyframes moveDownLeft31 {
+        0% {
+          top: 85%;
+          left: 50%;
+          transform: scale(1.5);
+          opacity: 0.8;
+        
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+      }
+      @keyframes moveUpRight32 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+   
+        }
+        100% {
+          top: 85%;
+          left: 50%;
+          transform: scale(1.5);
+          opacity: 0.8;
+       
+        }
+      }
+      @keyframes moveDownLeft32 {
+        0% {
+          top: 85%;
+          left: 50%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+       
+        }
+      }
+
+      @keyframes moveUpRight10 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 85%;
+          left: 50%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+      }
+      @keyframes moveDownLeft10 {
+        0% {
+          top: 85%;
+          left: 50%;
+          transform: scale(1.5);
+          opacity: 0.8;
+ 
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+
+      @keyframes moveUpRight33 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+   
+        }
+        100% {
+          top: 20%;
+          left: 75%;
+          transform: scale(1.5);
+          opacity: 0.8;
+         
+        }
+      }
+      @keyframes moveDownLeft33 {
+        0% {
+          top: 20%;
+          left: 75%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+       
+        }
+      }
+      @keyframes moveUpRight34 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 20%;
+          left: 75%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+      }
+      @keyframes moveDownLeft34 {
+        0% {
+          top: 20%;
+          left: 75%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight35 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 20%;
+          left: 75%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+      }
+      @keyframes moveDownLeft35 {
+        0% {
+          top: 20%;
+          left: 75%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+      }
+      @keyframes moveUpRight36 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 45%;
+          left: 15%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+      }
+      @keyframes moveDownLeft36 {
+        0% {
+          top: 45%;
+          left: 15%;
+          transform: scale(1.5);
+          opacity: 0.8;
+
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+      }
+      @keyframes moveUpRight37 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+
+        }
+        100% {
+          top: 45%;
+          left: 15%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+      }
+      @keyframes moveDownLeft37 {
+        0% {
+          top: 45%;
+          left: 15%;
+          transform: scale(1.5);
+          opacity: 0.8;
+  
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+ 
+        }
+      }
+      @keyframes moveUpRight38 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+    
+        }
+        100% {
+          top: 45%;
+          left: 15%;
+          transform: scale(1.5);
+          opacity: 0.8;
+        
+        }
+      }
+      @keyframes moveDownLeft38 {
+        0% {
+          top: 45%;
+          left: 15%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+        
+        }
+      }
+      @keyframes moveUpRight39 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+   
+        }
+        100% {
+          top: 67%;
+          left: 79%;
+          transform: scale(1.5);
+          opacity: 0.8;
+      
+        }
+      }
+      @keyframes moveDownLeft39 {
+        0% {
+          top: 67%;
+          left: 79%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+    
+        }
+      }
+      @keyframes moveUpRight40 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+      
+        }
+        100% {
+          top: 67%;
+          left: 79%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+      }
+      @keyframes moveDownLeft40 {
+        0% {
+          top: 67%;
+          left: 79%;
+          transform: scale(1.5);
+          opacity: 0.8;
+     
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+        
+        }
+      }
+      @keyframes moveUpRight41 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+  
+        }
+        100% {
+          top: 67%;
+          left: 79%;
+          transform: scale(1.5);
+          opacity: 0.8;
+      
+        }
+      }
+      @keyframes moveDownLeft41 {
+        0% {
+          top: 67%;
+          left: 79%;
+          transform: scale(1.5);
+          opacity: 0.8;
+    
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+   
+        }
+      }
+
+      @keyframes moveUpRight42 {
+        0% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+     
+        }
+        100% {
+          top: 67%;
+          left: 79%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+      }
+      @keyframes moveDownLeft42 {
+        0% {
+          top: 67%;
+          left: 79%;
+          transform: scale(1.5);
+          opacity: 0.8;
+   
+        }
+        100% {
+          top: 45%;
+          left: 47%;
+          transform: scale(0.3);
+          opacity: 0.5;
+    
+        }
+      }
+
+      .player {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateZ(0);
+      }
+      .play,
+      .previous,
+      .next,
+      .pause {
+        margin: 3px;
+        width: 40px;
+        height: 40px;
+   
+
+        border-radius: 50%;
+        transform: translateZ(0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-size: 40px 40px
+      }
+
+      .fa {
+        color:rgba(34, 167, 240, 1);
+      }
+
+      .play,
+      .previous,
+      .next,
+      .pause {
+        width: 40px;
+        height: 40px;
+  
+        background: white;
+        visibility: visible;
+        transform: translateZ(0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        background-size: 40px 40px;
+        position: relative;
+        transform: perspective(1px) translateZ(0);
+        border: white solid 2px;
+       cursor: pointer;
+      }
+      .play:before,
+      .previous:before,
+      .next:before,
+      .pause:before {
+        content: '';
+        position: absolute;
+        border: white solid 6px; 
+  
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        animation-duration: 1s;
+        border-radius: 50%;
+      }
+      @keyframes hvr-ripple-out {
+        100% {
+          top: -12px;
+          right: -12px;
+          bottom: -12px;
+          left: -12px;
+          opacity: 0;
+        }
+      }
+
+      .nextForward,
+      .playpause {
+        margin-left: 3px;
+      }
+      .previousBackward {
+        margin-right: 3px;
+      }
+      .playTwo {
+        width: 40px;
+        height: 40px;
+        background-color: #63b0e9;
+        visibility: visible;
+        transform: translateZ(0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("img/pausebtn.png");
+        background-size: 40px 40px
+  
+      }
+      .pause {
+        width: 40px;
+        height: 40px;
+        visibility: visible;
+        transform: translateZ(0)
+      }
+
+      .icon {
+        transform: translateZ(0);
+      }
+      .playStart {
+        width: 45px;
+        height: 45px;
+        background-image: url("images/playbtn");
+      }
+      .playPaused {
+        margin-right: 3px;
+      }
+
+    </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <div class="mainArea">
+      <div class="circle">
+        <div class="expanding"></div>
+        <div class="expanding2"></div>
+        <div class="player">
+        
+          <audio src="music/music1.mp4" class="audio"></audio>
+          <audio src="music/music2.mp4" class="audio2"></audio>
+          <audio src="music/music3.mp4" class="audio3"></audio>
+          <div class="previous">
+            <i class="fa fa-backward previousBackward"></i>
+          </div>
+          <div class="play">
+            <div class="thirdCircle"></div>
+            <div class="fourthCircle"></div>
+            <div class="fifthCircle"></div>
+            <div class="sixthCircle"></div>
+            <i class="fa fa-play playPause"></i>
+          </div>
+          <div class="next">
+            <i class="fa fa-forward nextForward"></i>
+          </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
+    <script>
+      const mainArea = document.querySelector('.mainArea');
+      const circle = document.querySelector('.circle');
+      const bubbles = document.querySelectorAll('.bubble');
+      const moveUp = document.querySelectorAll('.moveUp');
+      const moveDown = document.querySelectorAll('.moveDown');
+      const play = document.querySelector('.play');
+      const previous = document.querySelector('.previous');
+      const next = document.querySelector('.next');
+      const music = document.querySelector('.audio');
+      const music2 = document.querySelector('.audio2');
+      const music3 = document.querySelector('.audio3');
+      const playIcon = document.querySelector(".icon")
+      const playStart = document.querySelector(".playStart")
+      const playPause = document.querySelector(".playPause")
+      const expanding = document.querySelector(".expanding")
+      const thirdCircle = document.querySelector(".thirdCircle")
+      const fourthCircle = document.querySelector(".fourthCircle")
+      const fifthCircle = document.querySelector(".fifthCircle")
+      const sixthCircle = document.querySelector(".sixthCircle")
+      play.addEventListener('click', start);
+      play.addEventListener('click', stopMusic);
+      previous.addEventListener('click', previousMusic);
+      next.addEventListener('click', nextMusic);
+      let bubbleCount = 1;
+      let bubbleCount2 = 1;
+      let bubbleCount3 = 1;
+      let bubbleCount4 = 1;
+      let bubbleCount5 = 1;
+      let bubbleCount6 = 1;
+      let bubbleCount7 = 1;
+      let bubbleCount8 = 1;
+      let bubbleCount9 = 1;
+      let bubbleCount10 = 1;
+      let bubbleCount11 = 1;
+      let bubbleCount12 = 1;
+      let bubbleCount13 = 1;
+      let bubbleCount14 = 1;
+      let bubbleCount15 = 1;
+      let bubbleCount16 = 1;
+      let bubbleCount17 = 1;
+      let bubbleCount18 = 1;
+      let bubbleCount19 = 1;
+      let bubbleCount20 = 1;
+      let bubbleCount21 = 1;
+      let bubbleCount22 = 1;
+      let bubbleCount23 = 1;
+      let bubbleCount24 = 1;
+      let bubbleCount25 = 1;
+      let bubbleCount26 = 1;
+      let bubbleCount27 = 1;
+      let bubbleCount28 = 1;
+      let bubbleCount29 = 1;
+      let bubbleCount30 = 1;
+      let bubbleCount31 = 1;
+      let bubbleCount32 = 1;
+      let bubbleCount33 = 1;
+      let bubbleCount34 = 1;
+      let bubbleCount35 = 1;
+      let bubbleCount36 = 1;
+      let bubbleCount37 = 1;
+      let bubbleCount38 = 1;
+      let bubbleCount39 = 1;
+      let bubbleCount40 = 1;
+      let bubbleCount41 = 1;
+      let bubbleCount42 = 1;
+      let bubbleCount43 = 1;
+      let bubbleCount44 = 1;
+      let bubbleCount45 = 1;
+      let bubbleCount46 = 1;
+      let bubbleCount47 = 1;
+      let bubbleCount48 = 1;
+      let bubbleCount49 = 1;
+      let bubbleCount50 = 1;
+      let bubbleCount51 = 1;
+      let bubbleCount52 = 1;
+      let bubbleCount53 = 1;
+      let bubbleCount54 = 1;
+      let bubbleCount55 = 1;
+      let bubbleCount56 = 1;
+      let bubbleCount57 = 1;
+      let bubbleCount58 = 1;
+      let bubbleCount59 = 1;
+      let bubbleCount60 = 1;
+      let bubbleCount61 = 1;
+      let bubbleCount62 = 1;
+      let circleShrink = true;
+      let borderGlow = true;
+      let musicOn = false;
+      let active = false;
+      const songs = ['music1', 'music2', 'music3'];
+      let songIndex = 1;
+
+      loadSong(songs[songIndex]);
+
+      function loadSong(song) {
+        music.src = `music/${song}.mp4`;
+      }
+
+      function previousMusic() {
+        console.log('previous');
+        songIndex--;
+        if (songIndex < 0) {
+          songIndex = songs.length - 1;
+        }
+        loadSong(songs[songIndex]);
+        start2();
+      }
+
+      function nextMusic() {
+        console.log('next');
+        songIndex++;
+        if (songIndex > songs.length - 1) {
+          songIndex = 0;
+        }
+        loadSong(songs[songIndex]);
+        start2();
+      }
+
+      function createBubbles() {
+        let interval1 = setInterval(function () {
+          if (bubbleCount > 0) {
+            bubbleCount--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount2 > 0) {
+            bubbleCount2--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble2';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount3 > 0) {
+            bubbleCount3--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble3';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount4 > 0) {
+            bubbleCount4--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble4';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount5 > 0) {
+            bubbleCount5--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble5';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount6 > 0) {
+            bubbleCount6--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble6';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+
+          if (bubbleCount8 > 0) {
+            bubbleCount8--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble8';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount9 > 0) {
+            bubbleCount9--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble9';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount10 > 0) {
+            bubbleCount10--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble10';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+
+          if (bubbleCount13 > 0) {
+            bubbleCount13--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble13';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount14 > 0) {
+            bubbleCount14--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble14';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount15 > 0) {
+            bubbleCount15--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble15';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount16 > 0) {
+            bubbleCount16--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble16';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount17 > 0) {
+            bubbleCount17--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble17';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount18 > 0) {
+            bubbleCount18--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble18';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount19 > 0) {
+            bubbleCount19--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble19';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount20 > 0) {
+            bubbleCount20--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble20';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount21 > 0) {
+            bubbleCount21--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble21';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount22 > 0) {
+            bubbleCount22--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble22';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount23 > 0) {
+            bubbleCount23--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble23';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount24 > 0) {
+            bubbleCount24--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble24';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+        
+          if (bubbleCount28 > 0) {
+            bubbleCount28--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble28';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount29 > 0) {
+            bubbleCount29--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble29';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount30 > 0) {
+            bubbleCount30--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble30';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount31 > 0) {
+            bubbleCount31--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble31';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount32 > 0) {
+            bubbleCount32--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble32';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount33 > 0) {
+            bubbleCount33--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble33';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount34 > 0) {
+            bubbleCount34--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble34';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount35 > 0) {
+            bubbleCount35--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble35';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount36 > 0) {
+            bubbleCount36--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble36';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount37 > 0) {
+            bubbleCount37--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble37';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount38 > 0) {
+            bubbleCount38--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble38';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount39 > 0) {
+            bubbleCount39--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble39';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount40 > 0) {
+            bubbleCount40--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble40';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount41 > 0) {
+            bubbleCount41--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble41';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount42 > 0) {
+            bubbleCount42--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble42';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+
+          if (bubbleCount44 > 0) {
+            bubbleCount44--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble44';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount45 > 0) {
+            bubbleCount45--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble45';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount46 > 0) {
+            bubbleCount46--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble46';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount47 > 0) {
+            bubbleCount47--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble47';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount48 > 0) {
+            bubbleCount48--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble48';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount49 > 0) {
+            bubbleCount49--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble49';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount50 > 0) {
+            bubbleCount50--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble50';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount51 > 0) {
+            bubbleCount51--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble51';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount52 > 0) {
+            bubbleCount52--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble52';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount53 > 0) {
+            bubbleCount53--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble53';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+          if (bubbleCount54 > 0) {
+            bubbleCount54--;
+            let bubble = document.createElement('div');
+            bubble.className = 'bubble54';
+            bubble.moveUp = true;
+            mainArea.appendChild(bubble);
+          }
+        }, 240);
+        setTimeout(() => {
+          clearInterval(interval1);
+        }, 2000);
+      }
+
+      function moveBubblesUp() {
+        const bubbles = document.querySelectorAll('.bubble');
+        const bubbles2 = document.querySelectorAll('.bubble2');
+        const bubbles3 = document.querySelectorAll('.bubble3');
+        const bubbles4 = document.querySelectorAll('.bubble4');
+        const bubbles5 = document.querySelectorAll('.bubble5');
+        const bubbles6 = document.querySelectorAll('.bubble6');
+        const bubbles7 = document.querySelectorAll('.bubble7');
+        const bubbles8 = document.querySelectorAll('.bubble8');
+        const bubbles9 = document.querySelectorAll('.bubble9');
+        const bubbles10 = document.querySelectorAll('.bubble10');
+        const bubbles11 = document.querySelectorAll('.bubble11');
+        const bubbles12 = document.querySelectorAll('.bubble12');
+        const bubbles13 = document.querySelectorAll('.bubble13');
+        const bubbles14 = document.querySelectorAll('.bubble14');
+        const bubbles15 = document.querySelectorAll('.bubble15');
+        const bubbles16 = document.querySelectorAll('.bubble16');
+        const bubbles17 = document.querySelectorAll('.bubble17');
+        const bubbles18 = document.querySelectorAll('.bubble18');
+        const bubbles19 = document.querySelectorAll('.bubble19');
+        const bubbles20 = document.querySelectorAll('.bubble20');
+        const bubbles21 = document.querySelectorAll('.bubble21');
+        const bubbles22 = document.querySelectorAll('.bubble22');
+        const bubbles23 = document.querySelectorAll('.bubble23');
+        const bubbles24 = document.querySelectorAll('.bubble24');
+        const bubbles25 = document.querySelectorAll('.bubble25');
+        const bubbles26 = document.querySelectorAll('.bubble26');
+        const bubbles27 = document.querySelectorAll('.bubble27');
+        const bubbles28 = document.querySelectorAll('.bubble28');
+        const bubbles29 = document.querySelectorAll('.bubble29');
+        const bubbles30 = document.querySelectorAll('.bubble30');
+        const bubbles31 = document.querySelectorAll('.bubble31');
+        const bubbles32 = document.querySelectorAll('.bubble32');
+        const bubbles33 = document.querySelectorAll('.bubble33');
+        const bubbles34 = document.querySelectorAll('.bubble34');
+        const bubbles35 = document.querySelectorAll('.bubble35');
+        const bubbles36 = document.querySelectorAll('.bubble36');
+        const bubbles37 = document.querySelectorAll('.bubble37');
+        const bubbles38 = document.querySelectorAll('.bubble38');
+        const bubbles39 = document.querySelectorAll('.bubble39');
+        const bubbles40 = document.querySelectorAll('.bubble40');
+        const bubbles41 = document.querySelectorAll('.bubble41');
+        const bubbles42 = document.querySelectorAll('.bubble42');
+        const bubbles43 = document.querySelectorAll('.bubble43');
+        const bubbles44 = document.querySelectorAll('.bubble44');
+        const bubbles45 = document.querySelectorAll('.bubble45');
+        const bubbles46 = document.querySelectorAll('.bubble46');
+        const bubbles47 = document.querySelectorAll('.bubble47');
+        const bubbles48 = document.querySelectorAll('.bubble48');
+        const bubbles49 = document.querySelectorAll('.bubble49');
+        const bubbles50 = document.querySelectorAll('.bubble50');
+        const bubbles51 = document.querySelectorAll('.bubble51');
+        const bubbles52 = document.querySelectorAll('.bubble52');
+        const bubbles53 = document.querySelectorAll('.bubble53');
+        const bubbles54 = document.querySelectorAll('.bubble54');
+        bubbles.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble moveUp';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles2.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble2 moveUpRight';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles3.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble3 moveUpRight2';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles4.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble4 moveUpRight3';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles5.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble5 moveUpRight4';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles6.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble6 moveUpRight5';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles7.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble7 moveUpRight6';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles8.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble8 moveUpRight7';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles9.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble9 moveUpRight8';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles10.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble10 moveUpRight9';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles11.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble11 moveUpRight10';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles12.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble12 moveUpRight11';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles13.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble13 moveUpRight12';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles14.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble14 moveUpRight13';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles15.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble15 moveUpRight14';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles16.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble16 moveUpRight15';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles17.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble17 moveUpRight16';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles18.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble18 moveUpRight17';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles19.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble19 moveUpRight18';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles20.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble20 moveUpRight19';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles21.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble21 moveUpRight20';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles22.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble22 moveUpRight21';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles23.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble23 moveUpRight22';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles24.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble24 moveUpRight23';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles25.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble25 moveUpRight25';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles26.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble26 moveUpRight25';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles27.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble27 moveUpRight26';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles28.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble28 moveUpRight27';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles29.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble29 moveUpRight28';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles30.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble30 moveUpRight29';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles31.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble31 moveUpRight30';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles32.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble32 moveUpRight31';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles33.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble33 moveUpRight32';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles34.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble34 moveUpRight33';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles35.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble35 moveUpRight34';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles36.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble36 moveUpRight35';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles37.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble37 moveUpRight36';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles38.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble38 moveUpRight37';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles39.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble39 moveUpRight38';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles40.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble40 moveUpRight39';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles41.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble41 moveUpRight40';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles42.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble42 moveUpRight41';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles43.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble43 moveUpRight42';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles44.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble44 moveUpRight43';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles45.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble45 moveUpRight44';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles46.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble46 moveUpRight45';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles47.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble47 moveUpRight46';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles48.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble48 moveUpRight47';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles49.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble49 moveUpRight48';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles50.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble50 moveUpRight49';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+        bubbles51.forEach(function (bubble) {
+          if (bubble.moveUp == true) {
+            bubble.className = 'bubble51 moveUpRight50';
+            setTimeout(function () {
+              bubble.moveUp = false;
+            }, 5000);
+          }
+        });
+      }
+
+      function moveBubblesDown() {
+        const bubbles = document.querySelectorAll('.bubble');
+        const bubbles2 = document.querySelectorAll('.bubble2');
+        const bubbles3 = document.querySelectorAll('.bubble3');
+        const bubbles4 = document.querySelectorAll('.bubble4');
+        const bubbles5 = document.querySelectorAll('.bubble5');
+        const bubbles6 = document.querySelectorAll('.bubble6');
+        const bubbles7 = document.querySelectorAll('.bubble7');
+        const bubbles8 = document.querySelectorAll('.bubble8');
+        const bubbles9 = document.querySelectorAll('.bubble9');
+        const bubbles10 = document.querySelectorAll('.bubble10');
+        const bubbles11 = document.querySelectorAll('.bubble11');
+        const bubbles12 = document.querySelectorAll('.bubble12');
+        const bubbles13 = document.querySelectorAll('.bubble13');
+        const bubbles14 = document.querySelectorAll('.bubble14');
+        const bubbles15 = document.querySelectorAll('.bubble15');
+        const bubbles16 = document.querySelectorAll('.bubble16');
+        const bubbles17 = document.querySelectorAll('.bubble17');
+        const bubbles18 = document.querySelectorAll('.bubble18');
+        const bubbles19 = document.querySelectorAll('.bubble19');
+        const bubbles20 = document.querySelectorAll('.bubble20');
+        const bubbles21 = document.querySelectorAll('.bubble21');
+        const bubbles22 = document.querySelectorAll('.bubble22');
+        const bubbles23 = document.querySelectorAll('.bubble23');
+        const bubbles24 = document.querySelectorAll('.bubble24');
+        const bubbles25 = document.querySelectorAll('.bubble25');
+        const bubbles26 = document.querySelectorAll('.bubble26');
+        const bubbles27 = document.querySelectorAll('.bubble27');
+        const bubbles28 = document.querySelectorAll('.bubble28');
+        const bubbles29 = document.querySelectorAll('.bubble29');
+        const bubbles30 = document.querySelectorAll('.bubble30');
+        const bubbles31 = document.querySelectorAll('.bubble31');
+        const bubbles32 = document.querySelectorAll('.bubble32');
+        const bubbles33 = document.querySelectorAll('.bubble33');
+        const bubbles34 = document.querySelectorAll('.bubble34');
+        const bubbles35 = document.querySelectorAll('.bubble35');
+        const bubbles36 = document.querySelectorAll('.bubble36');
+        const bubbles37 = document.querySelectorAll('.bubble37');
+        const bubbles38 = document.querySelectorAll('.bubble38');
+        const bubbles39 = document.querySelectorAll('.bubble39');
+        const bubbles40 = document.querySelectorAll('.bubble40');
+        const bubbles41 = document.querySelectorAll('.bubble41');
+        const bubbles42 = document.querySelectorAll('.bubble42');
+        const bubbles43 = document.querySelectorAll('.bubble43');
+        const bubbles44 = document.querySelectorAll('.bubble44');
+        const bubbles45 = document.querySelectorAll('.bubble45');
+        const bubbles46 = document.querySelectorAll('.bubble46');
+        const bubbles47 = document.querySelectorAll('.bubble47');
+        const bubbles48 = document.querySelectorAll('.bubble48');
+        const bubbles49 = document.querySelectorAll('.bubble49');
+        const bubbles50 = document.querySelectorAll('.bubble50');
+        const bubbles51 = document.querySelectorAll('.bubble51');
+        const bubbles52 = document.querySelectorAll('.bubble52');
+        const bubbles53 = document.querySelectorAll('.bubble53');
+        const bubbles54 = document.querySelectorAll('.bubble54');
+        bubbles.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble moveDown';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles2.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble2 moveDownLeft';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles3.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble3 moveDownLeft2';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles4.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble4 moveDownLeft3';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles5.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble5 moveDownLeft4';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles6.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble6 moveDownLeft5';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles7.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble7 moveDownLeft6';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles8.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble8 moveDownLeft7';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles9.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble9 moveDownLeft8';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles10.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble10 moveDownLeft9';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles11.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble11 moveDownLeft10';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles12.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble12 moveDownLeft11';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles13.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble13 moveDownLeft12';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles14.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble14 moveDownLeft13';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles15.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble15 moveDownLeft14';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles16.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble16 moveDownLeft15';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles17.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble17 moveDownLeft16';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles18.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble18 moveDownLeft17';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles19.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble19 moveDownLeft18';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles20.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble20 moveDownLeft19';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles21.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble21 moveDownLeft20';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles22.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble22 moveDownLeft21';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles23.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble23 moveDownLeft22';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles24.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble24 moveDownLeft23';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles25.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble25 moveDownLeft25';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles26.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble26 moveDownLeft25';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles27.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble27 moveDownLeft26';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles28.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble28 moveDownLeft27';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles29.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble29 moveDownLeft28';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles30.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble30 moveDownLeft29';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles31.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble31 moveDownLeft30';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles32.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble32 moveDownLeft31';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles33.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble33 moveDownLeft32';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles34.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble34 moveDownLeft33';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles35.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble35 moveDownLeft34';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles36.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble36 moveDownLeft35';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles37.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble37 moveDownLeft36';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles38.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble38 moveDownLeft37';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles39.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble39 moveDownLeft38';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles40.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble40 moveDownLeft39';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles41.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble41 moveDownLeft40';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles42.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble42 moveDownLeft41';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles43.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble43 moveDownLeft42';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles44.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble44 moveDownLeft43';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles45.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble45 moveDownLeft44';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles46.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble46 moveDownLeft45';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles47.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble47 moveDownLeft46';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles48.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble48 moveDownLeft47';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles49.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble49 moveDownLeft48';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles50.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble50 moveDownLeft49';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+        bubbles51.forEach(function (bubble) {
+          if (bubble.moveUp == false) {
+            bubble.className = 'bubble51 moveDownLeft50';
+            setTimeout(function () {
+              bubble.moveUp = true;
+            }, 5000);
+          }
+        });
+      }
+
+      function grow() {
+        if (circleShrink == false) {
+          expanding.className = 'expanding grow';
+          circle.classList.add("circle_radial")
+          circle.classList.remove("circleRing")
+     
+          play.classList.remove("circleRing2")
+          thirdCircle.classList.remove("circleRing3")
+
+          setTimeout(() => {
+            circleShrink = true;
+          }, 5000);
+        }
+      }
+
+      function shrink() {
+        if (circleShrink == true) {
+          expanding.className = 'expanding shrink';
+          circle.classList.add("circleRing")
+    
+          play.classList.add("circleRing2")
+          thirdCircle.classList.add("circleRing3")
+     
+          circle.classList.remove("circle_radial")
+      
+          setTimeout(() => {
+            circleShrink = false;
+          }, 5000);
+        }
+      }
+
+      function go() {
+        if (musicOn == true && active == true) {
+          moveBubblesUp();
+          moveBubblesDown();
+          shrink();
+          grow();
+          window.requestAnimationFrame(go);
+       
+        }
+      }
+
+      function stopMusic(e) {
+        if (active == true && musicOn == true) {
+          e.stopImmediatePropagation();
+          console.log('stop');
+          music.volume = 0.2;
+          music.pause();
+          musicOn = false;
+          active = false;
+          circle.classList.add('paused');
+
+          playPause.classList.remove("fa")
+          playPause.classList.remove("fa-pause")
+          playPause.classList.add("fa")
+          playPause.classList.add("fa-play")
+          playPause.classList.remove("playPaused")
+        }
+      }
+
+      function start2() {
+        if (active == true && musicOn == true) {
+          console.log('start2');
+          music.volume = 0.2;
+          music.play();
+          musicOn = true;
+          active = true;
+        }
+        if (active == false && musicOn == false) {
+          console.log('start2');
+          music.volume = 0.2;
+ 
+          if (document.querySelector("play").classList.contains("play")) {
+  
+            playPause.classList.remove("fa")
+            playPause.classList.remove("fa-play")
+            playPause.classList.add("fa")
+            playPause.classList.add("fa-pause")
+
+
+          }
+          console.log("false class added")
+        }
+      }
+
+      function start(e) {
+        if (active == false && musicOn == false) {
+      
+          e.stopImmediatePropagation();
+          console.log('start');
+          createBubbles();
+          music.volume = 1;
+          music.play();
+          musicOn = true;
+          active = true;
+
+          playPause.classList.remove("fa")
+          playPause.classList.remove("fa-play")
+          playPause.classList.add("fa")
+          playPause.classList.add("fa-pause")
+          playPause.classList.add("playPaused")
+        }
+        window.requestAnimationFrame(go);
+      }
+    </script>
+  </body>
+</html>
+
